@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beknow'in - the portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <script src="./js/app.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+          <a href="index.html"><span style="color:black; font-family: oxygen_light; font-size:20px; font-weight: bold">&larr; home</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section>
+
+          <!-- <%# PROJECT HEADING%> -->
+          <div class="project_title">
+            <div class="row">
+              <div class="col-sm-3">
+                <h1>Project 4:</h1>
+              </div>
+              <div class="col-sm-4">
+                <a href="http://bit.ly/ArtsyApp" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/artsy_logo.png" alt="Artsy" style="height:75px;border:0;">
+                </a>
+              </div>
+              <div class="col-sm-5"></div>
+            </div>
+          </div>
+
+          <!-- <%# WHAT DOES APP DO AND FUTURE ENHANCEMENTS%> -->
+          <div class="project_tech_top">
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>About the app...</h2>
+                <p>Artsy is an application aimed at art lovers.  The target audience is local community.</p>
+                <p>The three key aims of the app are to:</p>
+                <ol>
+                  <li>Provide a market place for home made art, bringing buyers and sellers together</li>
+                  <li>Provide a forum for users to arrange and host meet-ups</li>
+                  <li>Allow users to connect with eachother, to teach or be taught new artistic skills.</li>
+                </ol>
+              </div>
+              <div class="col-sm-6">
+                <h2>Future Enhancements...</h2>
+                <p>With a little additional time, here are some of the future improvements I would like to make to Artsy:</p>
+                <ol>
+                  <li>Add Stripe payment facility to enable online payments.</li>
+                  <li>Provide a meetup.com API to allow for more meet-up options</li>
+                  <li>Enable mail messaging to event owners, when updates are made to their event</li>
+                  <li>Implement image optimisation to ensure better site aesthetics on user image uploads.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- <%# TECHNOLOGY USED%> -->
+          <div class="project_tech">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Technologies used:</h2>
+              </div>
+            </div>
+            <div id="logos">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/angularjs.png" alt="AngularJS" style="height:40px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/rails.png" alt="Ruby on Rails" style="height:55px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/postgresql.png" alt="PostgreSQL" style="height:75px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/bootstrap-logo.png" alt="Bootstrap" style="height:75px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/S3.png" alt="AWS S3" style="height:50px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Etsy_logo.png" alt="Etsy API" style="height:75px;border:0;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# MAIN PROJECT IMAGE%> -->
+          <div class="project_image">
+            <div class="row">
+              <h3>Home Page</h3>
+              <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Artsy.png">
+            </div>
+
+          <!-- <%# WINS%> -->
+            <div class="row">
+              <div id="wins">
+                <h2>Wins</h2>
+                <p>Finding the correct category in Etsy to drill down into was tough!</p>
+                <p>There was little documentation on the Etsy data fields classification, so Insominia was used to interrogate the API and find a consistent data field which referred to 'art supplies'.</p>
+                <p>Once this was obtained, the searches made a lot more sense and returned searches that were relevant and met the criteria of being an art supply!</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# NICE TOUCHES AND BEHIND SCENES%> -->
+          <div class="project_tech">
+            <div id="row_2_text">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h2>Behind the Scenes...</h2>
+                  <p>This is a full stack application which utilises RESTful routing and authentication. Ruby on Rails provides the server-side functionality and Angular serves the client-side.</p>
+                  <h3>Database relationships</h3>
+                  <p>PostgreSQL DB is used. Perhaps the most complex relationships are seen on the Artist / Buyer Show page which has several DB relationships in play. It brings together all of the SQL data relating to a user (user, product and event data) as well as data from join tables relating to genres.</p>
+                  <h3>Secure Routes</h3>
+                  <p>Authentication enables secure routing. These allow users to only edit or delete objects they have created. For example, while the events page is owned by a user, they cannot edit another users comments and an event attendee has limited edit rights by being able to select attend for that event. Users must log in to use the site.</p>
+                  <h3>Oauth</h3>
+                  <p>As well as standard registration, Oauth is made available for Github users.</p>
+                </div>
+                <div class="col-sm-6">
+                  <h2>Nice Touches...</h2>
+                  <h3>Authentication re-route</h3>
+                  <p>A new user is redirected to a profile page to update it with key information.  This makes the site more useful and informative to all users and ensures the new user doesn't forget to make the updates.</p>
+                  <h3>Filter / Search</h3>
+                  <p>filterFilter allows the user to reduce the items on display in any of the index pages and find what they are looking for, faster</p>
+                  <h3>Etsy API</h3>
+                  <p>The Etsy API matches the genre of an event to matching products under the category of Etsy's art supplies, which the user may be interested in.  It populates results with 12 items for purchase or just for inspiration.</p>
+                  <h3>Parallax</h3>
+                  <p>The parallax class adds interest to the index page with scrolling text and static pictures, holding the users interest when they first enter the site.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# Sub PROJECT IMAGEs%> -->
+          <div class="project_image2">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>User Index Page</h3>
+                <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/artsy_user_index.png">
+              </div>
+              <div class="col-md-6">
+                <h3>User Profile Page</h3>
+                <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/artsy_user.png">
+              </div>
+            </div>
+          </div>
+
+          <!-- <%#FIND OUT MORE%> -->
+          <div id="moreInfo">
+            <div class="row">
+              <div class="col-sm-3">
+                <a href="http://bit.ly/ArtsyApp" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/artsy_logo.png" alt="Artsy App" style="height:55px;border:0;">
+                </a>
+                <p>Vist App</p>
+              </div>
+              <div class="col-sm-3">
+                <a href="http://bit.ly/ArtsyAppAngular" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/github_logo.png" alt="Github" style="height:60px;border:0;">
+                </a>
+                <p>Front-end</p>
+              </div>
+              <div class="col-sm-3">
+                <a href="http://bit.ly/ArtsyAppRails" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/github_logo.png" alt="Github" style="height:60px;border:0;">
+                </a>
+                <p>Back-end</p>
+              </div>
+              <div class="col-sm-3">
+                <a href="http://bit.ly/ArtsyAppReadMe" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/markdown_logo.png" alt="README" style="height:60px;border:0;">
+                </a>
+                <p>Read-me</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Beknow'in 2017</p>
+    </footer>
+  </body>
+</html>

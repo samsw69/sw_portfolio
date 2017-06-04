@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beknow'in - the portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="/js/app.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+          <a href="index.html"><span style="color:black; font-family: oxygen_light; font-size:20px; font-weight: bold">&larr; home</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section>
+
+          <!-- <%# PROJECT HEADING%> -->
+          <div class="project_title">
+            <div class="row">
+              <div class="col-sm-3">
+                <h1>Project 2:</h1>
+              </div>
+              <div class="col-sm-4">
+                <a href="http://bit.ly/Chickenrun" target="_blank">
+                  <img src=".https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/chickenRun_logo.png" alt="Chicken_run" style="height:75px;border:0;">
+                </a>
+              </div>
+              <div class="col-sm-5"></div>
+            </div>
+          </div>
+
+          <!-- <%# WHAT DOES APP DO AND FUTURE ENHANCEMENTS%> -->
+          <div class="project_tech_top">
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>About the app...</h2>
+                <p>Chicken Run is an app to enable organisers to plan an event (in this case a hen weekend) and communicate plans, logistics and updates in a single place.</p>
+                <p>The three key aims of the app are to:</p>
+                <ol>
+                  <li>Provide a single place for an organiser to upload event information for use by a large group</li>
+                  <li>Allow what can be a disparate group of strangers to get to know eachother prior to the hen weekend</li>
+                  <li>ensure the weekend goes smoothly, as information and schedules are available in one place for immediate review.</li>
+                </ol>
+              </div>
+              <div class="col-sm-6">
+                <h2>Future Enhancements...</h2>
+                <p>With a little additional time, here are some of the future improvements I would like to make to Chicken Run:</p>
+                <ol>
+                  <li>Improve the media-responsiveness of the app as this is a tool that would be used predominantly on a mobile phone</li>
+                  <li>Introduce alerting capability to notify users when they need to leave to get to a venue for example</li>
+                  <li>Develop the app for multiple hen weekends and protect them by inviting users to the relevant hen party, by email.</li>
+                  <li>Improve styling, with the knowledge I have gained since completing this early project.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- <%# TECHNOLOGY USED%> -->
+          <div class="project_tech">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Technologies used:</h2>
+              </div>
+            </div>
+            <div id="logos">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/jQuery_logo.png" alt="JQuery" style="height:35px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/MongoDB.png" alt="MongoDB" style="height:55px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/express.png" alt="express" style="height:50px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/bootstrap-logo.png" alt="Bootstrap" style="height:75px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/S3.png" alt="AWS S3" style="height:50px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/google_maps.png" alt="Google Maps API" style="height:75px;border:0;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# MAIN PROJECT IMAGE%> -->
+          <div class="project_image">
+            <div class="row">
+              <h3>Home Page</h3>
+              <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Chicken_Run_home.png">
+            </div>
+
+          <!-- <%# WINS%> -->
+            <div class="row">
+              <div id="wins">
+                <h2>Wins</h2>
+                <p>Using the GoogleMaps API for the the first time and incorporating auto-complete to make finding a location more predictive / quicker</p>
+                <p>Making the appropriate routes secure so that users could see other user profiles when logged in but could ony edit data they had created.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# NICE TOUCHES AND BEHIND SCENES%> -->
+          <div class="project_tech">
+            <div id="row_2_text">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h2>Behind the Scenes...</h2>
+                  <p>This is a full stack application which utilises RESTful routing and authentication. Facebook authentication is offered in addition to direct login via the app itself.</p>
+                  <h3>APIs</h3>
+                  <p>This app uses the GoogleMaps API, auto-completing addresses.  Facebook authentication is enabled, and AWS S3 allows for images to be stored remotely.</p>
+                  <h3>Secure Routes</h3>
+                  <p>Authentication enables secure routing. These allow users to only edit or delete objects they have created. For example, while the events page is owned by a user, they cannot edit another users comments. Users must log in to use the site.</p>
+
+                </div>
+                <div class="col-sm-6">
+                  <h2>Nice Touches...</h2>
+                  <h3>Profile Page</h3>
+                  <p>A new user is redirected to a profile page to update their profile, the very first time they login.  As this app is about creating a close-knit social group 'quickly', users are encouraged to share some fun information with eachother to break the ice and get to know the group.</p>
+                  <h3>Comments</h3>
+                  <p>Users can leave comments on individual event pages, asking questions and generating interest for the weekend.  They can delete only their own comments.</p>
+                  <h3>Personalisation</h3>
+                  <p>The Hen's name is used on the event page to personalise the experience a little more.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# Sub PROJECT IMAGEs%> -->
+          <div class="project_image2">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Event Index Page</h3>
+                <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/CR_Eventindex1.png">
+              </div>
+              <div class="col-md-6">
+                <h3>Event Page</h3>
+                <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/CR_Event2.png">
+              </div>
+            </div>
+          </div>
+
+          <!-- <%#FIND OUT MORE%> -->
+          <div id="moreInfo">
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="http://bit.ly/Chickenrun" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/chickenRun_logo.png" alt="Chicken Run App" style="height:55px;border:0;">
+                </a>
+                <p>Vist App</p>
+              </div>
+              <div class="col-sm-4">
+                <a href="http://bit.ly/chickenRun_Github" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/github_logo.png" alt="Github" style="height:60px;border:0;">
+                </a>
+                <p>Front-end</p>
+              </div>
+              <div class="col-sm-4">
+                <a href="http://bit.ly/chickenCoopREADME" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/markdown_logo.png" alt="README" style="height:60px;border:0;">
+                </a>
+                <p>Read-me</p>
+              </div>
+            </div>
+          </div>
+        <!-- </div>
+      </div> -->
+    </section>
+  </div>
+</main>
+
+  <footer>
+    <p>&copy; Beknow'in 2017</p>
+  </footer>
+
+  </body>
+</html>

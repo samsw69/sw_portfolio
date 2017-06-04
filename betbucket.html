@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beknow'in - the portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="/js/app.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+          <a href="index.html"><span style="color:black; font-family: oxygen_light; font-size:20px; font-weight: bold">&larr; home</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section>
+          <!-- <%# PROJECT HEADING%> -->
+          <div class="project_title">
+            <div class="row">
+              <div class="col-sm-3">
+                <h1>Project 3:</h1>
+              </div>
+              <div class="col-sm-4">
+                <a href="http://bit.ly/BetBucket" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/BetBucket_logo.png" alt="Bet_Bucket" style="height:75px;border:0;">
+                </a>
+              </div>
+              <div class="col-sm-5"></div>
+            </div>
+          </div>
+
+          <!-- <%# WHAT DOES APP DO AND FUTURE ENHANCEMENTS%> -->
+          <div class="project_tech_top">
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>About the app...</h2>
+                <p>Bet Bucket is an app for the discerning gambler, that enjoys accumulator betting.</p>
+                <p>The aim of the app is to:</p>
+                <ol>
+                  <li>Enable users to search for gambling odds on Betfair</li>
+                  <li>Create an Accumulator 'bucket' to store bets</li>
+                  <li>Obtain real-time data on the movement of the odds on each stake to identify and monitor the bets progress and potential payout.</li>
+                </ol>
+              </div>
+              <div class="col-sm-6">
+                <h2>Future Enhancements...</h2>
+                <p>With a little additional time, here are some of the future improvements I would like to make to BetBucket:</p>
+                <ol>
+                  <li>Enable bets to be placed directly within the Users BetFair account.</li>
+                  <li>Improve the UI to remove some ambiguity on the user journey.</li>
+                  <li>Enable alerts based on user created parameters.</li>
+                  <li>Add search functionality for events, as the Betfair API is very comprehensive but finding a specific event is not intuitive</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- <%# TECHNOLOGY USED%> -->
+          <div class="project_tech">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Technologies used:</h2>
+              </div>
+            </div>
+            <div id="logos">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/angularjs.png" alt="AngularJS" style="height:40px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/nodejs-logo.png" alt="NodeJS" style="height:55px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/MongoDB.png" alt="MongoDB" style="height:55px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/bootstrap-logo.png" alt="Bootstrap" style="height:65px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/betfair_logo.jpg" alt="Betfair API" style="height:50px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/chartjs.png" alt="chart.JS" style="height:75px;border:0;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# MAIN PROJECT IMAGE%> -->
+          <div class="project_image">
+            <div class="row">
+              <h3>Welcome Page</h3>
+              <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Bet_Bucket_LoginPage.png">
+            </div>
+
+          <!-- <%# WINS%> -->
+            <div class="row">
+              <div id="wins">
+                <h2>Wins</h2>
+                <p>Navigating the Betfair API was very time-consuming so working out that the session token could be stored as a global variable to be sent with the API requests was a huge win.</p>
+                <p>It also took some time to identify the correct filters and data sets to make the data meaningful to a user.  Finding the correct fields was very time consuming and a huge breakthrough for the success and viability of the app.</p>
+                <p>Introducing Chart.JS which was key to giving the website its highly visual styling and coupled with clean and visually contrasting styling, gave the site its professional appearance.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# NICE TOUCHES AND BEHIND SCENES%> -->
+          <div class="project_tech">
+            <div id="row_2_text">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h2>Behind the Scenes...</h2>
+                  <p>This is a full stack application which utilises RESTful routing and authentication.</p>
+                  <h3>Betfair API</h3>
+                  <p>Session tokens had to be stored as a global variable to enable access to the API, as it was required with every request, which refreshed every few seconds.</p>
+                  <h3>Charts</h3>
+                  <p>While quite complicated behind the scenes, the app itself is simple, and we wanted to introduce strong visuals.  Chart.JS was used to chart the real time change in odds and subsequent impact on possible winnings.</p>
+                  <h3>MongoDB</h3>
+                  <p>MongoDB was the database of choice.  The database stored all user and account data.</p>
+                </div>
+                <div class="col-sm-6">
+                  <h2>Nice Touches...</h2>
+                  <h3>Chart.js</h3>
+                  <p>The home page has a chart behind it to imitate the changing values of a mock accumulator account. Pre-set values provide the animation.</p>
+                  <h3>Simplicity</h3>
+                  <p>There are a minimal number of views for the user to navigate. A simple home page with instructions and then the users account page from where all stakes are added and managed.</p>
+                  <h3>No odds available</h3>
+                  <p>In order to make the data more user-friendly, where there were events with no odds available, there was simply no data, which would have been mis-leading to the user.  A condition was set to make this more obvious to the user, stating 'no odds available', if the data field was empty.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# Sub PROJECT IMAGEs%> -->
+          <div class="project_image2">
+            <div id="BetBucket_project_image2"
+            <div class="row">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Add an event</h3>
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Bet_Bucket_add_event.png" style="height:300px;border:0;">
+                  <p>Select a category, select an event, then add to the current accumulator</p>
+                </div>
+                <div class="col-md-6">
+                  <h3>Real-time Accumulator updates</h3>
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Bet_Bucket_accumulator_action.png" style="height:300px;border:0;">
+                  <p>This is an extract of the accumulator movements during the live finals of ITV's "The Voice".</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Balsamiq - wireframing</h3>
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/P3_BalsamiqAll.png" style="height:300px;border:0;">
+                  <p>Wire-framing was important, as it helped to focus the team on the final layout of the app, removing ambiguity.</p>
+                </div>
+                <div class="col-md-6">
+                  <h3>Trello - task management</h3>
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Bet_Bucket_Trello_Day-2.png" style="height:300px;border:0;">
+                  <p>Task completion was reviewed at least twice a day and ensured the project was completed on time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <%#FIND OUT MORE%> -->
+          <div id="moreInfo">
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="http://bit.ly/BetBucket" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Bet_Bucket.png" alt="Bet_Bucket_app" style="height:55px;border:0;">
+                </a>
+                <p>Vist App</p>
+              </div>
+              <div class="col-sm-4">
+                <a href="http://bit.ly/betBucketGithub" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/github_logo.png" alt="Github" style="height:60px;border:0;">
+                </a>
+                <p>Front-end</p>
+              </div>
+              <!-- <div class="col-sm-3">
+                <a href="http://bit.ly/ArtsyAppRails"target="_blank"><img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/github_logo.png" alt="Github" style="height:60px;border:0;"></a>
+                <p>Back-end</p>
+              </div> -->
+              <div class="col-sm-4">
+                <a href="http://bit.ly/BetBucketREADME" target="_blank">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/markdown_logo.png" alt="README" style="height:60px;border:0;">
+                </a>
+                <p>Read-me</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Beknow'in 2017</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beknow'in - the portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="/js/app.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+          <a href="index.html"><span style="color:black; font-family: oxygen_light; font-size:20px; font-weight: bold">&larr; home</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section>
+          <!-- <%# PROJECT HEADING%> -->
+          <div class="project_title">
+            <div class="row">
+              <div class="col-sm-3">
+                <h1>Project 1:</h1>
+              </div>
+              <div class="col-sm-4">
+                <a href="http://bit.ly/phwoarInARow" target="_blank"><img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/phwoarInaRow_logo.png" alt="Phwoar-in-a-row" style="height:65px;border:0;"></a>
+              </div>
+              <div class="col-sm-5"></div>
+            </div>
+          </div>
+
+          <!-- <%# WHAT DOES APP DO AND FUTURE ENHANCEMENTS%> -->
+          <div class="project_tech_top">
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>About the app...</h2>
+                <p>Phwoar-In-A-Row is a take on the popular game Connect4 or 'four in a row'.</p>
+                <p>Instructions to play are:</p>
+                <ol>
+                  <li>Each user selects a token piece to play</li>
+                  <li>They then select a column to place their token</li>
+                  <li>The Winner is the first to place 4 in a row vertically, diagonally or horizontally.</li>
+                </ol>
+              </div>
+              <div class="col-sm-6">
+                <h2>Future Enhancements...</h2>
+                <p>With a little additional time, here are some of the future improvements I would like to make:</p>
+                <ol>
+                  <li>Incorporate a player leader board</li>
+                  <li>Add validation that a user token has been selected, technically you can play without a token!</li>
+                  <li>Make the site responsive to ensure the grid doesn't change its column width</li>
+                  <li>Add some options for backgrounds and music on or off</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- <%# TECHNOLOGY USED%> -->
+          <div class="project_tech">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Technologies used:</h2>
+              </div>
+            </div>
+            <div id="logos">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/HTML5.png" alt="HTML" style="height:75px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/css-bg-01.png" alt="CSS" style="height:75px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/JavaScript_logo.png" alt="javaScript" style="height:75px;border:0;">
+                </div>
+                <div class="col-sm-2">
+                  <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/jQuery_logo.png" alt="jQuery" style="height:75px;border:0;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# MAIN PROJECT IMAGE%> -->
+          <div class="project_image">
+            <div class="row">
+              <h3>Home Page</h3>
+              <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Phwoar_in_a_Row.png">
+            </div>
+
+          <!-- <%# WINS%> -->
+            <div class="row">
+              <div id="wins">
+                <h2>Wins</h2>
+                <p>Ensuring that the rules of gravity were observed when a token was placed in a column as well as making sure that the token couldn't be placed in a slot more than once</p>
+                <p>Designing the logic for the grid in order to identify the win conditions and the subsequent winner of each match</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# NICE TOUCHES AND BEHIND SCENES%> -->
+          <div class="project_tech">
+            <div id="row_2_text">
+              <div class="row">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2>Behind the Scenes...</h2>
+                    <p>The crux of this game is in providing a way in which the grid can be defined and managed as an array.</p>
+                    <h3>The problem</h3>
+                    <p>Provide a way to:</p>
+                    <ul>
+                      <li>identify and log a slot that has been selected</li>
+                      <li>ensure the token occupies the lowest available slot in a column</li>
+                      <li>prevent occupied slots from being re-used during a game</li>
+                      <li>logging game process for 2 players and storing the data to determine a winner</li>
+                    </ul>
+                    <h3>The solution</h3>
+                    <p>The game grid was mapped out with 6 rows of arrays, each with 7 columns.  This provided 42 indices mapped against a slot.</p>
+                    <p>This provided a unique identifier for each slot - ie an array and its index.</p>
+                    <p>.pop is used so that only the last number of the array, which is also the the lowest available slot of a column, is available for a token to be 'placed in'. In this way .pop removed the index from the column so it couldn't be re-used. Additionally it added that reference to the players array to build the set of token locations by which to check for a win.</p>
+                  </div>
+                </div>
+                <div class="row" id="Piar_NT">
+                  <div class="col-sm-12">
+                    <h2>Nice Touches...</h2>
+                    <h3>A bit of fun...</h3>
+                    <p>I used the retro hunks theme as a bit of fun with a 'Barry White' voiceover as a surprise when the mouse rolled over a picture. A short fan fair also announces the winner.</p>
+                    <h3>Scores</h3>
+                    <p>Players can keep a tally of their on-going score if they prefer an ongoing competition.</p>
+                    <h3>Select a token</h3>
+                    <p>Players get to choose their favourite hunk as their player token.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <%# Sub PROJECT IMAGEs%> -->
+          <div class="project_image2">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Game Play</h3>
+                <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/PiaR_gamePlay.png">
+              </div>
+              <div class="col-md-6">
+                <h3>The Grid's Array</h3>
+                <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/PiaR_array.png">
+              </div>
+            </div>
+          </div>
+
+          <!-- <%#FIND OUT MORE%> -->
+          <div id="moreInfo">
+            <div class="row">
+              <div id="PiaR_logo">
+                <div class="col-sm-3">
+                  <a href="http://bit.ly/phwoarInARow" target="_blank"><img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/phwoarInaRow_logo.png" alt="PiaR App" style="height:40px;border:0"></a>
+                  <p>Vist App</p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <a href="http://bit.ly/PiaR_Github" target="_blank"><img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/github_logo.png" alt="Github" style="height:60px;border:0"></a>
+                <p>GitHub</p>
+              </div>
+              <div class="col-sm-3">
+                <a href="http://bit.ly/connectPhwoarReadme" target="_blank"><img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/markdown_logo.png" alt="README" style="height:60px;border:0"></a>
+                <p>Read-me</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Beknow'in 2017</p>
+    </footer>
+  </body>
+</html>
